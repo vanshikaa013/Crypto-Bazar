@@ -7,15 +7,15 @@ const useAuthStatus = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [check, setCheck] = useState(true);
 
-  useEffect(()=>{
-    user ? setIsLoggedIn(true) : setIsLoggedIn(false)
+  useEffect(() => {
+    user ? setIsLoggedIn(true) : setIsLoggedIn(false);
     setCheck(false);
-  },[user])
-  return{
-    isLoggedIn , check
-  }
-
-   
+  }, [user]);
+  return {
+    isLoggedIn,
+    check,
+  };
 };
 
 export default useAuthStatus;
+
