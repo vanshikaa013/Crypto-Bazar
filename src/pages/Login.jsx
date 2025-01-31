@@ -53,6 +53,7 @@ const Login = () => {
         </Typography>
         <form onSubmit={(e) => handleSubmit(e)}>
           <TextField
+          required
             color="success"
             variant="outlined"
             label="Email"
@@ -62,6 +63,7 @@ const Login = () => {
             onChange={handleChange}
           ></TextField>
           <TextField
+          required
             color="success"
             variant="outlined"
             label="Password"

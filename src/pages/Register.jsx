@@ -48,6 +48,7 @@ const Register = () => {
         </Typography>
         <form onSubmit={(e)=>handleSubmit(e)}>
           <TextField
+          required
             color="success"
             variant="outlined"
             label="Enter Name"
@@ -59,6 +60,7 @@ const Register = () => {
             sx={{ margin: "5px 0px" }}
           ></TextField>
           <TextField
+          required
             color="success"
             variant="outlined"
             label="Enter Email"
@@ -70,6 +72,7 @@ const Register = () => {
             sx={{ margin: "5px 0px" }}
           ></TextField>
           <TextField
+          required
             color="success"
             variant="outlined"
             label="Enter Password"
@@ -81,6 +84,7 @@ const Register = () => {
             sx={{ margin: "5px 0px" }}
           ></TextField>
           <TextField
+          required
             color="success"
             variant="outlined"
             label="Confirm Password"
